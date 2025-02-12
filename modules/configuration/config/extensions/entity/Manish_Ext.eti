@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<entity
+  xmlns="http://guidewire.com/datamodel"
+  entity="Manish_Ext"
+  table="manish_ext"
+  type="retireable">
+  <column
+    name="firstName"
+    nullok="true"
+    type="firstname"/>
+</entity>
