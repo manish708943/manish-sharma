@@ -1,0 +1,293 @@
+<html>
+<head>
+<title>AssignmentStatus</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<LINK REL="StyleSheet" HREF="../../res/dictionary.css" TYPE="text/css"/>
+<script language="JavaScript" src="../../res/dictionaryui.js"></script>
+
+</head>
+<body onload='generateTOC()'>
+<div class="titlebox"
+<div><span class="pagetitle">AssignmentStatus</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="entityname">(abtl_assignmentstatus)</span>
+</div>
+<div class="desc">Assignment status of an assignable entity</div>
+</div>
+<table cellpadding="3" cellspacing="0" border="0" height="20" width="100%">
+<tr>
+<td nowrap="true" class="attrbox" height="20">
+<span class="attrtitle">Attributes: 
+Final
+</span>
+</td>
+</tr>
+</table>
+<br/>
+<div class="refbox biglist odd">
+<span id="reflink_1337" class="reftext" onclick='showAndHideRefBox("refbox_1337", "reflink_1337")'><img src="../../res/blackup.gif" border="0"><b>Referenced by: </b></span>
+<div id="refbox_1337" class="refbox_inner" style="display:none;">
+<A HREF="../full/Assignable.html" TARGET="tableFrame">Assignable.AssignmentStatus</A><br><A HREF="../full/Activity.html" TARGET="tableFrame">Activity.AssignmentStatus</A><br><A HREF="../full/UserRoleAssignment.html" TARGET="tableFrame">UserRoleAssignment.AssignmentStatus</A>
+</div>
+</span>
+</div>
+<a id='TOC'></a>
+<a name="Typecodes"></a><div class="arraysbox">Typecodes</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Code</td>
+<td>Name</td>
+<td>Description</td>
+<td>Priority</td>
+<td>Internal</td>
+<td>Retired</td>
+</tr>
+<tr valign="top">
+<td><a href=#assigned>assigned</a></td>
+<td>Assigned</td>
+<td>Entity is assigned; AssignedUserID and AssignedGroupID are both non-null</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#manual>manual</a></td>
+<td>Manual</td>
+<td>Entity is waiting to be manually assigned or reviewed; a non-null AssignedUserID means pending review</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#pendingassignment>pendingassignment</a></td>
+<td>Pending assignment</td>
+<td>Assignable is waiting for its containing entity to be assigned or reviewed; AssignedUserID and AssignedGroupID may be null or non-null</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td><a href=#unassigned>unassigned</a></td>
+<td>Unassigned</td>
+<td>Entity is unassigned; AssignedUserID and AssignedGroupID are both null</td>
+<td align=center>&nbsp;</td>
+<td>true</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<div class='subtypebox'>
+<a name=assigned></a>
+<div class="titlebox">
+<div class="filtertitle">assigned <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_1338" class="reftext" onclick='showAndHideRefBox("refbox_1338", "reflink_1338")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_1338" class="refbox_inner" style="display:none;">
+Entity is assigned; AssignedUserID and AssignedGroupID are both non-null
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>de</td>
+<td>Zugewiesen</td>
+<td>Entität ist zugewiesen; AssignedUserID und AssignedGroupID sind beides keine Nullwerte.</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Assigned</td>
+<td>Entity is assigned; AssignedUserID and AssignedGroupID are both non-null</td>
+</tr>
+<tr valign="top">
+<td>es</td>
+<td>Asignado</td>
+<td>La entidad está asignada; el AssignedUserID y el AssignedGroupID son no nulos</td>
+</tr>
+<tr valign="top">
+<td>fr</td>
+<td>Attribué</td>
+<td>Entité attribuée ; AssignedUserID et AssignedGroupID sont tous deux non nuls</td>
+</tr>
+<tr valign="top">
+<td>it</td>
+<td>Assegnato</td>
+<td>Entità assegnata; AssignedUserID e AssignedGroupID sono entrambi non Null</td>
+</tr>
+<tr valign="top">
+<td>ja</td>
+<td>アサイン済み</td>
+<td>エンティティがアサインされています。AssignedUserID と AssignedGroupID は両方とも Null ではありません。</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=manual></a>
+<div class="titlebox">
+<div class="filtertitle">manual <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_1339" class="reftext" onclick='showAndHideRefBox("refbox_1339", "reflink_1339")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_1339" class="refbox_inner" style="display:none;">
+Entity is waiting to be manually assigned or reviewed; a non-null AssignedUserID means pending review
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>de</td>
+<td>Manuell</td>
+<td>Die Entität wartet auf eine manuelle Aufgabe oder Überprüfung; AssignedUserID ohne Nullwert entspricht einer ausstehenden Überprüfung.</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Manual</td>
+<td>Entity is waiting to be manually assigned or reviewed; a non-null AssignedUserID means pending review</td>
+</tr>
+<tr valign="top">
+<td>es</td>
+<td>Manual</td>
+<td>La entidad está a la espera de asignación o revisión manual; un AssignedUserID no nulo indica que está pendiente de revisión</td>
+</tr>
+<tr valign="top">
+<td>fr</td>
+<td>Manuel</td>
+<td>L'entité est en attente d'attribution manuelle ou de révision ; un AssignedUserID non nul signifie que la révision est en attente</td>
+</tr>
+<tr valign="top">
+<td>it</td>
+<td>Manuale</td>
+<td>L’entità è in attesa di essere assegnata o revisionata manualmente; se AssignedUserID non è Null significa che è in attesa di revisione</td>
+</tr>
+<tr valign="top">
+<td>ja</td>
+<td>手動</td>
+<td>エンティティの手動によるアサインまたはレビューを待機しています。AssignedUserID が Null でない場合は、レビュー待ちであることを意味します。</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=pendingassignment></a>
+<div class="titlebox">
+<div class="filtertitle">pendingassignment <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_1340" class="reftext" onclick='showAndHideRefBox("refbox_1340", "reflink_1340")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_1340" class="refbox_inner" style="display:none;">
+Assignable is waiting for its containing entity to be assigned or reviewed; AssignedUserID and AssignedGroupID may be null or non-null
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>de</td>
+<td>Ausstehende Aufgabe</td>
+<td>Zuweisbares Objekt erwartet Zuweisung oder Überprüfung seiner enthaltenen Entität; AssignedUserID und AssignedGroupID sind möglicherweise null oder nicht-null.</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Pending assignment</td>
+<td>Assignable is waiting for its containing entity to be assigned or reviewed; AssignedUserID and AssignedGroupID may be null or non-null</td>
+</tr>
+<tr valign="top">
+<td>es</td>
+<td>Asignación pendiente</td>
+<td>Asignable a la espera de la asignación o revisión de la entidad que lo contiene; el AssignedUserID y el AssignedGroupID pueden ser nulos o no nulos</td>
+</tr>
+<tr valign="top">
+<td>fr</td>
+<td>En attente d'attribution</td>
+<td>L'élément attribuable attend que son entité contenante soit affectée ou révisée ; AssignedUserID et AssignedGroupID peuvent être nul ou non nuls</td>
+</tr>
+<tr valign="top">
+<td>it</td>
+<td>In attesa di assegnazione</td>
+<td>L’assegnabile è in attesa dell’assegnazione o della revisione della propria entità contenitore; AssignedUserID e AssignedGroupID potrebbero supportare o meno i valori Null</td>
+</tr>
+<tr valign="top">
+<td>ja</td>
+<td>アサイン待ち</td>
+<td>アサイン可能な状態ですが、内部のエンティティのアサインまたはレビューを待機しています。AssignedUserID と AssignedGroupID は Null である場合も Null でない場合もあります。</td>
+</tr>
+</table>
+</div>
+<div class='subtypebox'>
+<a name=unassigned></a>
+<div class="titlebox">
+<div class="filtertitle">unassigned <span class="entityname"></span></div>
+<div class="desc">
+<span id="reflink_1341" class="reftext" onclick='showAndHideRefBox("refbox_1341", "reflink_1341")'><img src="../../res/blackup.gif" border="0"><b>Description</b></span>
+<div id="refbox_1341" class="refbox_inner" style="display:none;">
+Entity is unassigned; AssignedUserID and AssignedGroupID are both null
+</div>
+</span>
+</div>
+</div>
+<a name="Categories"></a><div class="arraysbox">Categories</div>
+<ul>
+</ul>
+<a name="Localizations"></a><div class="arraysbox">Localizations</div>
+<table class="typelistbody" border="1" CELLPADDING="3" CELLSPACING="0">
+<tr class="typelistheader">
+<td>Locale</td>
+<td>Name</td>
+<td>Description</td>
+</tr>
+<tr valign="top">
+<td>de</td>
+<td>Nicht zugewiesen</td>
+<td>Entität ist nicht zugewiesen; AssignedUserID und AssignedGroupID sind beides Nullwerte.</td>
+</tr>
+<tr valign="top">
+<td>en_US</td>
+<td>Unassigned</td>
+<td>Entity is unassigned; AssignedUserID and AssignedGroupID are both null</td>
+</tr>
+<tr valign="top">
+<td>es</td>
+<td>Sin asignar</td>
+<td>La entidad no está asignada; el AssignedUserID y el AssignedGroupID son nulos</td>
+</tr>
+<tr valign="top">
+<td>fr</td>
+<td>Non attribué</td>
+<td>Entité non attribuée ; AssignedUserID et AssignedGroupID sont tous deux non nuls</td>
+</tr>
+<tr valign="top">
+<td>it</td>
+<td>Non assegnato</td>
+<td>L’entità non è assegnata; AssignedUserID e AssignedGroupID sono entrambi Null</td>
+</tr>
+<tr valign="top">
+<td>ja</td>
+<td>未定</td>
+<td>エンティティがアサインされていません。AssignedUserID と AssignedGroupID は両方とも Null です。</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

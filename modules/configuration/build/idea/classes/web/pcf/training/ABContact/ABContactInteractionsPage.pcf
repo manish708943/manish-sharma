@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<PCF
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../../../pcf.xsd">
+  <Page
+    canEdit="true"
+    id="ABContactInteractionsPage"
+    title="DisplayKey.get(&quot;Training.InteractionsPage&quot;)">
+    <LocationEntryPoint
+      signature="ABContactInteractionsPage(anABContact:ABContact)"/>
+    <Variable
+      name="anABContact"
+      type="ABContact"/>
+    <Screen>
+      <Toolbar>
+        <EditButtons/>
+        <IteratorButtons
+          id="id123"
+          iterator="ManishLV"/>
+      </Toolbar>
+      <ListViewPanel
+        id="ManishLV">
+        <Variable
+          initialValue="new Interactions_Ext()"
+          name="interaction"
+          type="Interactions_Ext"/>
+        <RowIterator
+          editable="true"
+          elementName="manish"
+          toAdd="anABContact.addToArrayFromInteraction(manish)"
+          toRemove="anABContact.removeFromArrayFromInteraction(manish)"
+          value="anABContact.ArrayFromInteraction"
+          valueType="entity.Interactions_Ext[]">
+          <Row>
+            <DateCell
+              editable="true"
+              id="id12"
+              label="&quot;Date&quot;"
+              value="manish.Date"/>
+            <TextCell
+              editable="true"
+              id="id22"
+              label="&quot;Reason&quot;"
+              value="manish.Reason"/>
+            <TextCell
+              editable="true"
+              id="id43"
+              label="&quot;Assigned User&quot;"
+              value="manish.AssignedUser"/>
+          </Row>
+        </RowIterator>
+      </ListViewPanel>
+    </Screen>
+  </Page>
+</PCF>
